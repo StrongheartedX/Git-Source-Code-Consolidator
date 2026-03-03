@@ -1,8 +1,8 @@
 # --- CONFIGURATION ---
 $outputFile = "output.txt"
 
-# Add directory names here that you want to skip entirely
-# Example: @("docs", "public", "scripts", "components/ui")
+# Add directory names here that you want to skip entirely.
+# Example: @("components/ui")
 $ignoredDirectories = @() 
 # ---------------------
 
@@ -95,4 +95,5 @@ foreach ($file in $files) {
 
 Write-Progress -Activity "Adding file content" -Completed
 Write-Host "Processing complete. Output written to $outputFile"
+
 
