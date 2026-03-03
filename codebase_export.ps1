@@ -2,7 +2,7 @@
 $outputFile = "output.txt"
 
 # Add directory names here that you want to skip entirely.
-# Example: @("components/ui")
+# Example: @("styles","components/ui") ignores all files in ./styles and ./components/ui directories.
 $ignoredDirectories = @() 
 # ---------------------
 
@@ -95,5 +95,6 @@ foreach ($file in $files) {
 
 Write-Progress -Activity "Adding file content" -Completed
 Write-Host "Processing complete. Output written to $outputFile"
+
 
 
